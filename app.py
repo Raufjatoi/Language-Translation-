@@ -29,5 +29,9 @@ def main():
         else:
             st.warning("Please enter some text to translate.")
 
+# Footer
+st.markdown("---")
+st.markdown("By [Rauf](https://personal-web-page-lemon.vercel.app/index.html)")
+
 if __name__ == '__main__':
     main()
