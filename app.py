@@ -29,9 +29,31 @@ def main():
         else:
             st.warning("Please enter some text to translate.")
 
-# Footer
-st.markdown("---")
-st.markdown("By [Rauf](https://personal-web-page-lemon.vercel.app/index.html)")
-
 if __name__ == '__main__':
     main()
+
+# Footer
+with st.container():
+    st.markdown("---")
+    st.markdown("By [Rauf](https://personal-web-page-lemon.vercel.app/index.html)")
+
+# Set container style to push footer to the bottom
+st.markdown(
+    """
+    <style>
+    .stApp {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .main {
+        flex: 1;
+    }
+    footer {
+        text-align: center;
+        margin-top: auto;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
